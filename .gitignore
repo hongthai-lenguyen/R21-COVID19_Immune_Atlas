@@ -1,0 +1,21 @@
+# Ignore raw sequencing data
+data/*
+
+*.fastq
+*.fastq.gz
+*.bam
+*.sam
+*.bai
+*.h5
+*.h5ad
+*.loom
+*.mtx
+*.RDS
+*.qs
+*.rds
+
+# Ignore temporary or large files
+.Rhistory
+.RData
+.DS_Store
+*.Rproj.user/

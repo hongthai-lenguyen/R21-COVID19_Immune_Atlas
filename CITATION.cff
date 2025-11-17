@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "R21-COVID19_Immune_Atlas"
+authors:
+  - family-names: "HongThai"
+    given-names: "LeNguyen"
+date-released: 2025-11-05
+version: "v1.0.0"
+repository-code: "https://github.com/hongthai-lenguyen/R21-COVID19_Immune_Atlas"

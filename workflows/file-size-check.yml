@@ -1,0 +1,26 @@
+name: File Size Check
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+  pull_request:
+
+jobs:
+  check_large_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Scan for files larger than 100MB
+        run: |
+          echo "Scanning for files >100MB..."
+          large_files=$(find . -type f -size +100M)
+          if [ -n "$large files" ]; then
+            echo "❌ ERROR: The following files exceed 100MB:"
+            echo "$large_files"
+            exit 1
+          else
+            echo "✅ All files are under 100MB."
