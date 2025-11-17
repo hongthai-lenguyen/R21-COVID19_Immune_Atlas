@@ -1,6 +1,4 @@
 # Ignore raw sequencing data
-data/*
-
 *.fastq
 *.fastq.gz
 *.bam
